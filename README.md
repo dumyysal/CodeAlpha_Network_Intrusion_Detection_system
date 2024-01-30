@@ -13,9 +13,9 @@ This repository contains a step by step guide for setting up a network intrusion
   - For Kali : https://bin3xish477.medium.com/installing-snort-on-kali-linux-9c96f3ab2910
   - Make sure to do back up for snort.conf
 2. Write ur local rules or use snort default rules ( you will in this repository my written local rules )
-   ``` vim /etc/snort/rules/local.rules '''
+    ``` vim /etc/snort/rules/local.rules  ```
 3. Start snort
-   ''' sudo snort -q -l /var/log/snort -i eth0 ( check ur interface name ) -A console -c snort.conf ```
+   ``` sudo snort -q -l /var/log/snort -i eth0 ( check ur interface name ) -A console -c snort.conf  ```
 4. Do namp scan on Metasploitable 2 , use Metasploit framework to perform ur attacks and see the alerts coming.
 Ps : If any error appear keep checking and fix it .
 
